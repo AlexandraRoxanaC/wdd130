@@ -1,0 +1,121 @@
+<!--    WEEK !
+
+The HTML elements are shown in red with angle brackets. They usually have an opening and closing
+tag. The closing tags have a slash after the first angle bracket. Each element tells the browser
+what kind of information is between its opening and closing tag.
+
+The <nav> element is used to hold the menu. It defines a set of navigation links. It can hold 
+different types of elements, but it will usually hold <a> elements.
+
+An <a> element defines a hyperlink. Additional information is needed
+inside the opening tag to specify where to send the user once they click the content of the <a>
+element. Additional information inside an opening tag is called an attribute. Attributes usually
+come in name/value pairs, with the name followed by an equal sign and then the value in
+quotes. This is an attribute with the name of href and the value in quotes of the URL or web
+address of where the link will take the user. Href stands for hypertext reference. HTML is not case 
+sensitive but it’s good practice to leave them lowercase.
+<a href="index.html">Home</a> 
+
+An img or image element doesn’t have an open and closing tag. That’s because there is no content that 
+is needed between tags. All the information to show the image is handled by the attributes. This image 
+element has two attributes the src or source attribute and the alt or alternative text attribute. The src 
+attribute has the value of the path of where the image is located along with the name of the image. The
+alt attribute shows alternative text that will be used by screen readers or if the image is not available. 
+The name part of the name value pairs are src and alt. The values are in the quotes following the equal sign.
+<img src="images/voyager.jpg" alt="docking station">  
+-->
+
+<!--    WEEK  2
+
+To comment in CSS we use /*comment*/
+
+The link tag has two attributes. The rel specifies the relationship between the current document and 
+the linked document. The href or hypertext reference shows where the document is located. It is inside a 
+styles folder and is called styles.css.
+    <link rel="stylesheet" href="styles/styles.css" /> 
+-->
+
+<!--    WEEK 3
+The developer can choose the name or values of ids and classes but they should not start with
+numbers. These id and class attributes are placed inside the beginning tag of the element. Then
+later when CSS is used, the id and class values can be used to target just that element.
+
+For example, if I had 4 paragraphs and I only wanted every other paragraph to have a light gray
+background. How do I target just some of the paragraphs in CSS and not others. I could give the
+paragraphs I want shaded a class name of ‘shaded’. Then in CSS I target not the <p> tag but the
+class name of ‘shaded’. To show that it is a class we put a dot or period in front of it. This tells
+CSS to look for a class name. Now I can put a background color and it will apply to all
+paragraphs with that class name.
+Ids work similarly but an id attribute is used to uniquely identify that element from others on
+the page. This means I can’t apply one id name to multiple elements like I did the class ‘shaded’.
+If I give my <h1> an id of ‘myheader’, I can’t use the id of ‘myheader’ anywhere else in this
+HTML document. If I do, my code will not validate. To apply CSS to that Id I would use the Id
+name with a hashtag in front of it. This tells CSS that you are looking for an Id called ‘myheader’.
+
+Class attributes are used to give a class name to an HTML element. Many different elements can 
+use the same class.
+ID attributes are used to give a unique id to an HTML element. You cannot have more than one element 
+with the same ID value in one HTML page.
+
+class='main-para'
+Then in CSS we can target just that class by using a dot selector. Classes are specified with a dot 
+or period before the class name in CSS.
+.main-para {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+
+-->
+
+<!--  WEEK 4
+Absolute units of measurements are fixed and appear as exactly that size. A common absolute unit of 
+measurement is px or pixels.
+Relative units of measurement specify a size relative to another property size. Relative units are better 
+for responsive pages, or in other words, the elements size relative to what device the user is rendering 
+the page on. Common relative units of measurement include em and % (percentages).
+    
+The em unit of measurement is used to change the font size of our navigation links. Since we haven't changed 
+the font size of our default body, we know that 16px is our starting point. If we want our font size to be 
+one and a half times as big (16 + 8 = 24px), we can use 1.5em.
+
+Block elements start on a new line and take up the full width available. They also have a top and bottom 
+margin. Examples of block elements are div, p, article, section, h1-h6, ol, ul, li, form, main, and nav.
+
+Inline elements do not start on a new line and only take up as much width as necessary. Examples of inline 
+elements are img, a, span, and button.
+
+You can change the defaults of inline and block elements with the display property. If I wanted
+to make a block element into an inline element, I would target it in CSS and use the display:
+inline declaration. And if I wanted to make an inline element into a block-level element I would
+use the display: block declaration. 
+
+Because of these different display values, centering elements on our page works differently
+with different elements. Two common ways to center elements are text-align: center and
+margin: 0 auto.
+Text-align: center will center the contents of the box. So, If I put text-align: center on the <h1>
+or the <p> then the content will get centered inside that invisible box or container.
+Margin: 0 auto will center the box itself. The first value refers to the top and bottom margin. In
+our case we will just leave them zero. The second value refers to the right and left it will
+automatically give an equal gap on each side of the box. 
+
+One example of a pseudo selectors is the :nth-of-type() selector. If you have a number of the
+same type of element, it will let you select the first, second, third, or fourth etc of those
+elements. For example if I have a number of list items, I could select just the 2nd one without
+having to give it a class or id name by using the :nth-of-type like this. If I wanted the fourth one,
+I’d use a 4 instead of a 2.
+div:nth-of-type(2){
+    background-color: #ccc;
+}
+-->
+
+<!--   WEEK 5
+
+CSS Box Model is a box that wraps around every element. It has content, padding, border, and margin.
+Content is where text and images appear.
+Padding is the area around the content.
+Border goes around the padding and content.
+Margin is the area outside the border.
+
+
+-->

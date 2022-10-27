@@ -1,0 +1,22 @@
+body{
+    background-color: pink;
+}
+header{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+.first-para{
+    color: white;
+    text-align: center;
+    display: block;
+}
+li{
+    color: black;
+    text-align: center;
+}
+img{
+    margin: 0 auto;
+    width: 40%;
+
+}
